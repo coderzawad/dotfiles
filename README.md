@@ -22,7 +22,7 @@ Before installation, ensure you have the following:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
+git clone https://github.com/coderzawad/dotfiles.git ~/.dotfiles
 
 # Run the install script
 cd ~/.dotfiles
@@ -43,13 +43,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 ln -s ~/.dotfiles/nvim ~/.config/nvim
 ```
 
-3. Install a plugin manager (if using Packer):
-```bash
-git clone https://github.com/wbthomason/packer.nvim \
-    ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
-
-4. Open Neovim and run:
+3. Open Neovim and run:
 ```
 :PackerSync
 ```
