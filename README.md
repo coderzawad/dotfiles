@@ -43,11 +43,6 @@ mv ~/.config/nvim ~/.config/nvim.backup
 ln -s ~/.dotfiles/nvim ~/.config/nvim
 ```
 
-3. Open Neovim and run:
-```
-:PackerSync
-```
-
 ### tmux Setup
 
 1. Backup existing tmux configuration:
