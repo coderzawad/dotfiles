@@ -1,12 +1,12 @@
 return {
   -- Catppuccin theme setup
   {
-    "catppuccin/nvim",
+    "folke/tokyonight.nvim",
     lazy = false,
-    name = "catppuccin",
+    name = "tokyonight",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme "catppuccin"
+      vim.cmd.colorscheme "tokyonight"
     end,
   },
   -- Lualine status bar
@@ -16,7 +16,7 @@ return {
     config = function()
       require('lualine').setup {
         options = {
-          theme = 'catppuccin', -- Set the lualine theme to catppuccin
+          theme = 'tokyonight', -- Set the lualine theme to catppuccin
           section_separators = { left = '', right = '' },
           component_separators = { left = '', right = '' },
           icons_enabled = true,
