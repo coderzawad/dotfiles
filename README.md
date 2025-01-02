@@ -116,7 +116,3 @@ ln -s ~/.dotfiles/kitty ~/.config/kitty
 ## 🤝 Contributing
 
 Feel free to fork this repository and submit pull requests for any improvements you make.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
