@@ -1,4 +1,4 @@
-# 🚀 My Developer Environment Dotfiles
+# 🚀 My Developer Environment Dotfiles (Outdated Script)
 
 A carefully curated collection of configurations for Neovim, tmux, and Kitty terminal to create a powerful and elegant development environment.
 
