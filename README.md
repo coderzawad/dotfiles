@@ -1,4 +1,4 @@
-# 🚀 My Developer Environment Dotfiles (Outdated Script)
+# 🚀 My Developer Environment Dotfiles
 
 A carefully curated collection of configurations for Neovim, tmux, and Kitty terminal to create a powerful and elegant development environment.
 
@@ -7,6 +7,11 @@ A carefully curated collection of configurations for Neovim, tmux, and Kitty ter
 - **Neovim**: Modern text editor configuration with plugins and custom keybindings
 - **tmux**: Terminal multiplexer setup with productivity enhancements
 - **Kitty**: Fast, feature-rich terminal emulator configuration
+- **Yabai**: A tiling window manager for MacOS
+- **Skhd**: Shortcut deamon to use shortcuts for yabai
+- **Alacritty**: Fast, Aesthetic terminal emulator written in rust.
+- **Iterm2**: Mid, Bigginer friendly terminal emulator.
+- **Starship**: Fast, oh-my-zsh alternative and its built on rust btw! 🗿 
 
 ## 🔧 Prerequisites
 
@@ -16,20 +21,9 @@ Before installation, ensure you have the following:
 - Neovim (version 0.8.0 or higher)
 - tmux (version 3.0 or higher)
 - Kitty terminal
-- A Nerd Font installed (recommended: JetBrainsMono Nerd Font)
+- A Nerd Font installed (recommended: MelsoLGS Nerd Font)
 
-## ⚡ Quick Install
-
-```bash
-# Clone the repository
-git clone https://github.com/coderzawad/dotfiles.git ~/.dotfiles
-
-# Run the install script
-cd ~/.dotfiles
-./install.sh
-```
-
-## 📝 Manual Installation
+## 📝 Installation
 
 ### Neovim Setup
 
@@ -52,13 +46,14 @@ mv ~/.tmux.conf ~/.tmux.conf.backup
 
 2. Create symbolic link:
 ```bash
-ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 ```
 
 3. Install tmux plugin manager (TPM):
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+
 
 4. Load tmux and install plugins:
 Press `prefix` + `I` (capital i) to install plugins
@@ -75,36 +70,17 @@ mv ~/.config/kitty ~/.config/kitty.backup
 ln -s ~/.dotfiles/kitty ~/.config/kitty
 ```
 
-## 🎨 Customization
-
-### Neovim
-- Main configuration file: `~/.config/nvim/init.lua`
-- Plugin configurations: `~/.config/nvim/lua/plugins`
-- Custom keybindings: `~/.config/nvim/lua/keymaps.lua`
-
-### tmux
-- Main configuration: `~/.tmux.conf`
-- Custom scripts: `~/.tmux/scripts/`
-
-### Kitty
-- Main configuration: `~/.config/kitty/kitty.conf`
-- Color scheme: `~/.config/kitty/theme.conf`
-
 ## 🔍 Troubleshooting
 
 ### Common Issues
 
-1. **Neovim plugins not working**
-   - Ensure all prerequisites are installed
-   - Run `:checkhealth` in Neovim
-   - Update plugins with `:PackerSync`
 
-2. **tmux key bindings not working**
+1. **tmux key bindings not working**
    - Check if TPM is installed
    - Try reloading tmux config with `Ctrl + S (prefix)` + `r`
 
-3. **Kitty rendering issues**
-   - Verify that a compatible Nerd Font is installed
+2. **Kitty rendering issues**
+   - Verify that a compatible Nerd Font is installed (MelsoLGS NF is recommended)
    - Check your GPU drivers are up to date
 
 ## 📚 Additional Resources
